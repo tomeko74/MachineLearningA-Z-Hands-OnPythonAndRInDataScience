@@ -467,6 +467,7 @@
       <w>EL.profile</w>
       <w>Earthquake</w>
       <w>Encoding</w>
+      <w>EndRule</w>
       <w>EuStockMarkets</w>
       <w>F</w>
       <w>Fatigue</w>
@@ -517,6 +518,7 @@
       <w>LifeCycleSavings</w>
       <w>Loblolly</w>
       <w>Logic</w>
+      <w>LogitBoost</w>
       <w>MASS</w>
       <w>Machines</w>
       <w>Map</w>
@@ -1358,6 +1360,8 @@
       <w>barplot.default</w>
       <w>bartlett.test</w>
       <w>base</w>
+      <w>base64decode</w>
+      <w>base64encode</w>
       <w>baseenv</w>
       <w>basehaz</w>
       <w>basename</w>
@@ -1387,7 +1391,14 @@
       <w>biopsy</w>
       <w>biplot</w>
       <w>birthwt</w>
+      <w>bitAnd</w>
+      <w>bitFlip</w>
+      <w>bitOr</w>
+      <w>bitShiftL</w>
+      <w>bitShiftR</w>
+      <w>bitXor</w>
       <w>bitmap</w>
+      <w>bitops</w>
       <w>bitwAnd</w>
       <w>bitwNot</w>
       <w>bitwOr</w>
@@ -1449,6 +1460,7 @@
       <w>c.warnings</w>
       <w>cBind</w>
       <w>cSplineDes</w>
+      <w>caTools</w>
       <w>cabbages</w>
       <w>cacheGenericsMetaData</w>
       <w>cacheMetaData</w>
@@ -1547,6 +1559,7 @@
       <w>cite</w>
       <w>citeNatbib</w>
       <w>city</w>
+      <w>cksum</w>
       <w>clara</w>
       <w>claridge</w>
       <w>class</w>
@@ -1600,6 +1613,7 @@
       <w>col</w>
       <w>col.whitebg</w>
       <w>col2rgb</w>
+      <w>colAUC</w>
       <w>colMeans</w>
       <w>colSums</w>
       <w>collapse</w>
@@ -1616,6 +1630,7 @@
       <w>columb</w>
       <w>columb.polys</w>
       <w>combn</w>
+      <w>combs</w>
       <w>commandArgs</w>
       <w>comment</w>
       <w>compactPDF</w>
@@ -1723,6 +1738,7 @@
       <w>cummin</w>
       <w>cumprod</w>
       <w>cumsum</w>
+      <w>cumsumexact</w>
       <w>curlGetHeaders</w>
       <w>current.column</w>
       <w>current.panel.limits</w>
@@ -3263,6 +3279,7 @@
       <w>preDrawDetails</w>
       <w>precip</w>
       <w>predict</w>
+      <w>predict.LogitBoost</w>
       <w>predict.bam</w>
       <w>predict.ellipsoid</w>
       <w>predict.gam</w>
@@ -3474,6 +3491,7 @@
       <w>reStruct</w>
       <w>read.00Index</w>
       <w>read.DIF</w>
+      <w>read.ENVI</w>
       <w>read.S</w>
       <w>read.arff</w>
       <w>read.csv</w>
@@ -3487,6 +3505,7 @@
       <w>read.fortran</w>
       <w>read.ftable</w>
       <w>read.fwf</w>
+      <w>read.gif</w>
       <w>read.mtp</w>
       <w>read.octave</w>
       <w>read.socket</w>
@@ -3633,7 +3652,13 @@
       <w>rtags</w>
       <w>rug</w>
       <w>runif</w>
+      <w>runmad</w>
+      <w>runmax</w>
+      <w>runmean</w>
       <w>runmed</w>
+      <w>runmin</w>
+      <w>runquantile</w>
+      <w>runsd</w>
       <w>ruspini</w>
       <w>rweibull</w>
       <w>rwilcox</w>
@@ -3645,6 +3670,7 @@
       <w>sammon</w>
       <w>sample</w>
       <w>sample.int</w>
+      <w>sample.split</w>
       <w>sapply</w>
       <w>save</w>
       <w>save.image</w>
@@ -3930,6 +3956,7 @@
       <w>substr</w>
       <w>substring</w>
       <w>sum</w>
+      <w>sumexact</w>
       <w>summarize_CRAN_check_status</w>
       <w>summarize_check_packages_in_dir_depends</w>
       <w>summarize_check_packages_in_dir_results</w>
@@ -4322,6 +4349,7 @@
       <w>transform.data.frame</w>
       <w>transform.default</w>
       <w>transplant</w>
+      <w>trapz</w>
       <w>treering</w>
       <w>trees</w>
       <w>trellis.currentLayout</w>
@@ -4535,6 +4563,7 @@
       <w>women</w>
       <w>wool</w>
       <w>write</w>
+      <w>write.ENVI</w>
       <w>write.arff</w>
       <w>write.csv</w>
       <w>write.csv2</w>
@@ -4543,6 +4572,7 @@
       <w>write.dta</w>
       <w>write.foreign</w>
       <w>write.ftable</w>
+      <w>write.gif</w>
       <w>write.matrix</w>
       <w>write.socket</w>
       <w>write.table</w>
