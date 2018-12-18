@@ -44,8 +44,13 @@ y_pred = regressor.predict(X_test)
 
 # Building the optimal model using Backward Elimination
 import statsmodels.formula.api as sm
+
+# musimy dodać na początku kolumnę jedynek dla wartości stałej (b0)
+# bo biblioteki typu LinearRegression robią to pod maską, ale już biblioteki typu statsmodels tego nie robią
+# ponieważ poniżej do arr dodajemy values, to musimy potraktować to tak, że do kolumny jedynek dodajemy naszą tablicę
 X = np.append(arr = np.ones((50, 1)).astype(int), values = X, axis = 1)
 X_opt = X[:, [0, 1, 2, 3, 4, 5]]
+# OLS - Ordinary Least Squares
 regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
 print(regressor_OLS.summary())
 X_opt = X[:, [0, 1, 3, 4, 5]]
