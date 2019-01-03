@@ -20,6 +20,7 @@ training_set[-3] = scale(training_set[-3])
 test_set[-3] = scale(test_set[-3])
 
 # Fitting K-NN to the Training set and Predicting the Test set results
+# install.packages('class')
 library(class)
 y_pred = knn(train = training_set[, -3],
              test = test_set[, -3],
@@ -31,6 +32,7 @@ y_pred = knn(train = training_set[, -3],
 cm = table(test_set[, 3], y_pred)
 
 # Visualising the Training set results
+# install.packages('ElemStatLearn')
 library(ElemStatLearn)
 set = training_set
 X1 = seq(min(set[, 1]) - 1, max(set[, 1]) + 1, by = 0.01)
