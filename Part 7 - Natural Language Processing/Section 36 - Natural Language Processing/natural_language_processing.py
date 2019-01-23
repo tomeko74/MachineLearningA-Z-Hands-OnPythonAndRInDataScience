@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('Restaurant_Reviews.tsv', delimiter = '\t', quoting = 3)
+dataset = pd.read_csv('Restaurant_Reviews.tsv', delimiter='\t', quoting=3)
 
 # Cleaning the texts
 import re
@@ -26,13 +26,13 @@ for i in range(0, 1000):
 
 # Creating the Bag of Words model
 from sklearn.feature_extraction.text import CountVectorizer
-cv = CountVectorizer(max_features = 1500)
+cv = CountVectorizer(max_features=1500)
 X = cv.fit_transform(corpus).toarray()
 y = dataset.iloc[:, 1].values
 
 # Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = 0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=0)
 
 # Fitting Naive Bayes to the Training set
 from sklearn.naive_bayes import GaussianNB
