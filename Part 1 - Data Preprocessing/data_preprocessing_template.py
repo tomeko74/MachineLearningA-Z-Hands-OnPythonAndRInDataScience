@@ -50,7 +50,7 @@ print(y)
 # from sklearn.cross_validation import train_test_split
 # ma być tak:
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 
 """ podobno jest to wbudowane w większość bibliotek do ML, więc w template nie musi być
 # Feature Scaling

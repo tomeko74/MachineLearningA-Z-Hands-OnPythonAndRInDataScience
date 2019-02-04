@@ -18,7 +18,7 @@ y = dataset.iloc[:, 3].values
 
 # ma być tak:
 from sklearn.impute import SimpleImputer
-imputer = SimpleImputer(missing_values = np.nan, strategy = 'mean')
+imputer = SimpleImputer(missing_values=np.nan, strategy='mean')
 
 imputer = imputer.fit(X[:, 1:3])
 X[:, 1:3] = imputer.transform(X[:, 1:3])
@@ -32,7 +32,7 @@ labelencoder_X = LabelEncoder()
 X[:, 0] = labelencoder_X.fit_transform(X[:, 0])
 print(X)
 
-onehotencoder = OneHotEncoder(categorical_features = [0])
+onehotencoder = OneHotEncoder(categorical_features=[0])
 X = onehotencoder.fit_transform(X).toarray()
 print(X)
 
@@ -49,5 +49,5 @@ print(y)
 
 # ma być tak:
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 
