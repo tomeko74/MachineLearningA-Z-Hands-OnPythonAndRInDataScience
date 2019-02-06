@@ -22,6 +22,11 @@ X_test = sc.transform(X_test)
 
 # Applying PCA
 from sklearn.decomposition import PCA
+
+# za pierwszym razem, żeby wybadać jaką wartośc należy podać
+# dostaniemy zakumulowaną wariancję dla kolejnych zmiennych niezależnych
+# pca = PCA(n_components=None)
+
 pca = PCA(n_components=2)
 X_train = pca.fit_transform(X_train)
 X_test = pca.transform(X_test)
