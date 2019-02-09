@@ -50,8 +50,8 @@ grid_search = GridSearchCV(estimator=classifier,
 grid_search = grid_search.fit(X_train, y_train)
 best_accuracy = grid_search.best_score_
 best_parameters = grid_search.best_params_
-print(best_accuracy);
-print(best_parameters);
+print(best_accuracy)
+print(best_parameters)
 
 # Visualising the Training set results
 from matplotlib.colors import ListedColormap
@@ -70,6 +70,7 @@ plt.xlabel('Age')
 plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
+
 
 # Visualising the Test set results
 from matplotlib.colors import ListedColormap
